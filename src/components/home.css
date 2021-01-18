@@ -1,0 +1,133 @@
+.mid{
+    border-right: 1px solid rgb(243, 214, 205);
+    height: 100% !important;
+    margin-top: 50px !important;
+}
+.btt{
+    border: 1px solid white !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    color: white !important;
+    outline: none !important;
+}
+.containe{
+    background-color: rgb(247, 238, 235);
+}
+.cont{
+    display: flex !important;
+    overflow-x: scroll !important;
+    overflow-y: hidden;
+}
+.cont::-webkit-scrollbar{
+    display: none;
+}
+.clothimg{
+    max-width: 200px;
+    max-height: 150px;
+    border-radius: 4px;
+}
+.buy{
+    background-color: rgb(241, 111, 68) !important;
+    color: white !important;
+    outline: none !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+.buy:hover{
+    background-color: #E16036 !important;
+}
+.wish{
+    border: none;
+   
+    background: none;
+    outline: none !important;
+}
+.wish:hover{
+    color: #E16036 !important;
+}
+.hrt{
+    max-width: 15px;
+}
+.cart{
+    border: 1px solid white !important;
+    color: white !important;
+    outline: none !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+#list::-webkit-scrollbar{
+    display: none !important;
+}
+.viewbtn{
+    border: 1px solid #E16036 !important;
+    color: #E16036 !important;
+    outline: none !important;
+}
+.viewbtn:hover{
+    background: #E16036 !important;
+    color: white !important;
+}
+.cname{
+    color: rgb(219, 219, 219);
+    margin-right: 1px;
+}
+.log{
+    background-color: rgb(241, 111, 68) !important;
+    color: white !important;
+    outline: none !important;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+.log:hover{
+    background-color: #E16036 !important;
+}
+#mform{
+    border: 0px solid black;
+    max-width: fit-content;
+    padding: 20px;
+    /* margin-left: auto; */
+    margin: auto;
+}
+#rowid{
+    margin: auto !important;
+    margin-top: 110px !important;
+    max-width: 800px;
+    background-color: #E16036;
+}
+.reg{
+    border: none !important;
+    outline: none !important;
+    background: none !important;
+}
+.reg:hover{
+    text-decoration: underline !important;
+}
+
+.logtext{
+    color: rgb(177, 169, 169);
+}
+#info{
+    background-color: #E16036;
+    color: white !important;
+    display: none;
+}
+#logerr{
+    margin-top: 45vh;
+}
+.top{
+    background-color: #E16036;
+}
+.usericon{
+    border: 0px solid red !important;
+    color: rgb(167, 161, 155) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 200px !important;
+    height: 200px !important;
+}
+body{
+    background: rgb(211, 205, 205) !important;
+}
+.menuitem{
+    color: gray !important;
+}
+#icn{
+    color: gray !important;
+}
