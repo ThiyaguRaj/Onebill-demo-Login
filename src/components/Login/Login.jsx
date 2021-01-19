@@ -7,7 +7,6 @@ import { Alert } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Dash from '../Drawer';
 import '../home.css'
-import './login.css'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -44,16 +43,16 @@ function Login(props) {
                 email: mail,
                 password: btoa(pass)
             }
-            localStorage.setItem("user", JSON.stringify(obj));
+            localStorage.setItem("user", JSON.stringify(obj)); 
             props.history.push({
                 pathname: "/dashboard"
             })
         } else {
             const err = document.getElementById('errmsg')
             if (mail === "") {
-                err.innerHTML = "Mail ID should not be null"
+                err.innerHTML = "Provide proper Email"
             } else {
-                err.innerHTML = "Password should not be null"
+                err.innerHTML = "Provide proper Password"
             }
         }
     }
@@ -78,10 +77,10 @@ function Login(props) {
                             <Alert.Heading className="text-center"><small><small> <small id="errmsg">Enter Login details Below !!</small></small></small></Alert.Heading>
                         </Alert>
                         <form className={classes.root} validate autoComplete="off" id="mform" onSubmit={submitHandler}>
-                            <TextField id="email" className="" label="Enter Email" type="email" onChange={handleMail} /><br />
-                            <TextField id="pwd" label="Enter Password" type="password" onChange={handlePass} /><br />
-                            <Button variant="contained" className="log mt-4" size="small" type="submit">Login</Button><hr />
-                            <p className="mt-4"><small className="text-muted">New to OneBill ? <Link className="reg text-primary" >Register</Link> now</small></p>
+                            <TextField id="email" className="" label="Enter Email" placeholder='"example@gmail.com"' type="email" onChange={handleMail} /><br />
+                            <TextField id="pwd" label="Enter Password" type="password" placeholder='"A-Z/a-z/0-9/*%$"' onChange={handlePass} /><br />
+                            <div className="text-center"><Button variant="contained" className="log mt-4" size="small" type="submit">Login</Button></div>
+                            <p className="mt-4 text-center"><small className="text-muted text-center">New to OneBill ? <Link className="reg text-primary" >Register</Link> now</small></p>
                         </form>
                     </div>
                 </div>

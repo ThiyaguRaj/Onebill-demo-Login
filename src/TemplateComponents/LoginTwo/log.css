@@ -1,0 +1,9 @@
+.wrap{
+    max-width: 300px;
+    margin: 17vh auto 0 auto;
+    text-align: center
+}
+.nameh{
+    border: 0px solid black;
+    border-radius: 3px !important;
+}

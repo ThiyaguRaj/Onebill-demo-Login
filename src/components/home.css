@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 .mid{
     border-right: 1px solid rgb(243, 214, 205);
     height: 100% !important;
@@ -52,6 +56,9 @@
     outline: none !important;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
 }
+.cart:hover{
+    background: rgb(202, 85, 45) !important;
+}
 #list::-webkit-scrollbar{
     display: none !important;
 }
@@ -73,6 +80,7 @@
     color: white !important;
     outline: none !important;
     margin-top: 20px;
+    width: 150px !important;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
 }
 .log:hover{
@@ -126,8 +134,16 @@ body{
     background: rgb(211, 205, 205) !important;
 }
 .menuitem{
-    color: gray !important;
+    color: rgb(168, 164, 164) !important;
 }
 #icn{
     color: gray !important;
 }
+
+/* test */
+
+@media only screen and (max-width: 600px) {
+    div.userdata{
+        display: none;
+    }
+  }

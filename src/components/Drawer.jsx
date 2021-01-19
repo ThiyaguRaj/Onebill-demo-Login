@@ -22,7 +22,6 @@ import { withRouter } from "react-router";
 
 const data = ['OnePlus', 'Samsung', 'Apple']
 const sportList = ['Shoes', 'Bats', 'Balls', 'T-Shirts', 'TrackPhants']
-// , 'MI', 'OppO', 'Vivo', 'Jio', 'Huawei', 'Micromax', 'LG', 'Lenivo', 'Intex', 'Velevet'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -91,8 +90,8 @@ const useStyles = makeStyles((theme) => ({
 function ClippedDrawer(props) {
 
   const [open, setOpen] = useState(true);
-  const [cloth, setCloth] = useState(true);
-  const [sport, setSport] = useState(true);
+  const [cloth, setCloth] = useState(false);
+  const [sport, setSport] = useState(false);
   const [val, setVal] = useState({})
 
   useEffect(() => {
@@ -141,9 +140,9 @@ function ClippedDrawer(props) {
               </div>
             </div>
             <div className="ml-auto">
-              <Button variant="outlined" color="light" className="ml-1 cart" onClick={handleOut}>
+              <button variant="outlined" color="light" className="ml-1 cart btn" onClick={handleOut}>
                 Logout
-              </Button>
+              </button>
             </div>
           </Toolbar>
         </AppBar>
@@ -311,16 +310,16 @@ function ClippedDrawer(props) {
         </Drawer>
         <main className={classes.content}>
           <div className="row">
-            <div className="col-md-7 text-justify mid bg-light mt-4">
+            <div className="col-md-7 text-justify mid bg-light">
               <main className={classes.content}>
-                <Toolbar />
+                {/* <Toolbar /> */}
                 <Product />
               </main>
             </div>
             <div className="col-md-5 text-justify">
               <main className={classes.content}>
                 <Toolbar />
-                <div className="text-center">
+                <div className="text-center userdata">
                   <AccountCircleIcon className="usericon" />
                   <div className="mt-4">
                     <p><strong>Welcome <span className="text-primary">{val.email}</span> !</strong></p><hr/>

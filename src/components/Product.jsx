@@ -8,11 +8,11 @@ import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 function Product(props) {
 
     return (
-        <div className="">
+        <div className="mt-0">
             {
                 (Plist && Plist.length > 0) ? Plist.map(pro => (
                     <div keys={pro.id}>
-                        <div className="row">
+                        <div className="row mt-0">
                             <div className="col-md-3">
                                 <img src={pro.image} className="clothimg" alt="Dress" />
                             </div>
@@ -30,8 +30,8 @@ function Product(props) {
                                         <button className="wish text-muted"><FavoriteBorderIcon className="hrt mr-2" /> Wishlist</button>
                                     </div>
                                     <div className="col-md-4">
-                                        <Button variant="outlined" color="primary" size="small" className="viewbtn">
-                                            View
+                                    <Button variant="contained" className="buy mb-3" size="small">
+                                            view
                                         </Button>
                                     </div>
                                 </div>
